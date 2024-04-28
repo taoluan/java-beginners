@@ -1,18 +1,16 @@
 package Main;
 
+import Encapsulation.Employee;
 import Encapsulation.Person;
+import Encapsulation.Rectangle;
+import Encapsulation.Student;
 
 public class Main {
     public static void main(String[] args) {
-        Person p = new Person();
-        p.setId(1001);
-        p.setName("Quynh");
-        p.setAge(24);
-        p.setAddress("Ha Noi");
-        System.out.println("Id: " + p.getId());
-        System.out.println("Name: " + p.getName());
-        System.out.println("Age: " + p.getAge());
-        System.out.println("Address: " + p.getAddress());
+        Employee e = new Employee(1, "Kien", "Hoang", 1000);
+        System.out.println("Id: " + e.getId());
+        System.out.println("Name: " + e.getFullName());
+        System.out.println("Salary: " + e.getSalary());
     }
 }
 
