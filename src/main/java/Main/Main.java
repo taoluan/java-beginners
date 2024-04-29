@@ -1,16 +1,17 @@
 package Main;
 
-import Encapsulation.Employee;
-import Encapsulation.Person;
-import Encapsulation.Rectangle;
-import Encapsulation.Student;
+import Encapsulation.*;
 
 public class Main {
     public static void main(String[] args) {
-        Employee e = new Employee(1, "Kien", "Hoang", 1000);
-        System.out.println("Id: " + e.getId());
-        System.out.println("Name: " + e.getFullName());
-        System.out.println("Salary: " + e.getSalary());
+        Account account1 = new Account(1000, "Tuan", 2000);
+        account1.display();
+        account1.withdraw(2100);
+        account1.deposit(600);
+        System.out.println("Balance: " + account1.getBalance());
+        account1.withdraw(2100);
+        System.out.println("Balance: " + account1.getBalance());
+
     }
 }
 
